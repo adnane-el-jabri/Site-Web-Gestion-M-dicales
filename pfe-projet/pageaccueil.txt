@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=BhuTuka+Expanded+One&family=Bree+Serif&family=Catamaran:wght@100&family=Caveat:wght@400;500;600;700&family=Courier+Prime:wght@400;700&family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@200&family=Fredoka:wght@300&family=Hubballi&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@1,200&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=League+Spartan:wght@300&family=Merriweather:ital@1&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:wght@200&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&family=Smooch+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>tabibi</title>
+</head>
+
+<body>
+  <header
+    style="background-color: white; position: sticky; top: 0; left: 0; z-index: 10000; padding: 20px; display: flex; justify-content: center; box-shadow: 10px 0px 10px #444; height: 80px;">
+    <div style="width: 90%; display: flex; justify-content: space-between; align-items: center;">
+      <img src="./imgs/logo.PNG" width="90px" height="70px" />
+      <ul style="display: flex; justify-content: space-around; width: 30%;">
+        <a href="#home">
+          <li style="list-style: none; font-size: 21px; cursor: pointer;">Home</li>
+        </a>
+        <a href="#aboutus">
+          <li style="list-style: none; font-size: 21px; cursor: pointer;">About</li>
+        </a>
+        <a href="#contact">
+          <li style="list-style: none; font-size: 21px; cursor: pointer;">Contact</li>
+        </a>
+      </ul>
+    </div>
+  </header>
+  <main id="home" style="display: flex; justify-content: space-around; align-items: center; height: calc(100vh - 85px)">
+    <img src="./imgs/home pic.png" width="600px" />
+    <div style=" width: 40%; text-align: center;">
+      <h1 style="margin-bottom: 10px; font-size: 40px;">Gestion médicale</h1>
+      <a href="./patient-things/p_login.php"><button
+          style="cursor: pointer; padding: 10px 15px; background-color: rgb(18, 163, 163); border: none; border-radius: 12px; color: white; font-size: 20px;">Je
+          suis un
+          patient</button></a>
+      <a href="./doctor-things/d_login.html"><button
+          style="cursor: pointer; padding: 10px 15px; background-color: rgb(18, 163, 163); border: none; border-radius: 12px; color: white; font-size: 20px">Je
+          suis un docteur</button></a>
+    </div>
+  </main>
+  <div class="about" id="aboutus">
+    <div class="container">
+      <h2 class="special-heading">About</h2>
+      <div class="about-content">
+        <div class="image">
+          <img src="./imgs/doctor about us.png" alt="" width="650px" height="250px">
+        </div>
+        <div class="text">
+          <p>
+            L'objective de notre site pour la gestion médicale est de faciliter la gestion des services
+             de santé en centralisant les informations, en améliorant la communication,
+             en optimisant les processus administratifs et en assurant la sécurité des données.
+          </p>
+          <hr>
+          <p>Notre site contient deux éspaces patient et docteur:L'espace patient est une 
+            section du site web réservée aux patients.Il s'agit d'un espace sécurisé où 
+            les patients peuvent accéder à leurs informations médicales, prendre 
+            rendez-vous en ligne, communiquer avec leur médecin, gérer leur santé.
+            L'espace docteur est un espace dédié aux professionnels de la santé qui utilisent le site pour 
+            gérer leurs patients et leur pratique médicale. Cet espace peut contenir différentes fonctionnalités(La gestion des rendez-vous, La gestion des dossiers médicaux, La prescription en ligne, La communication avec les patients, ...).
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="contact" id="contact">
+    <div class="container">
+      <h2 class="special-heading">contact</h2>
+      
+      <div class="info">
+        <a href="mailto:leonagency@mail.com?subject=Contact" class="link">tabibi@cabinet.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    &copy; 2023 <span>TABIBI</span> All Right Reserved
+  </div>
+</body>
+
+</html>
+---------------------------------------------------------------------------------
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: initial;
+    text-decoration: none;
+    list-style: none;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+}
+
+.special-heading {
+    color: #ebeced;
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+.special-heading+p {
+    margin: -30px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+
+.contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #F6F6F6;
+}
+
+.contact .info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.contact .info .label {
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.contact .info .link {
+    display: block;
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.contact .info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.contact .info .social i {
+    margin-left: 10px;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 767px) {
+
+    .contact .info .label,
+    .contact .info .link {
+        font-size: 25px;
+    }
+
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 30px 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.footer span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.about {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.about .about-content .image {
+    position: relative;
+    width: 250px;
+    height: 400px;
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 991px) {
+
+    .about .about-content .image::before,
+    .about .about-content .image::after {
+        display: none;
+    }
+}
+
+.about .about-content .image img {
+    max-width: 100%;
+}
+
+.about .about-content .text {
+    flex-basis: calc(100% - 500px);
+}
+
+.about .about-content .text p:first-of-type {
+    font-weight: bold;
+    margin-bottom: 50px;
+    line-height: 2;
+}
+
+.about .about-content .text hr {
+    width: 50%;
+    display: inline-block;
+    border-color: var(--main-color);
+}
+
+.about .about-content .text p:last-of-type {
+    line-height: 2;
+    color: #777;
+}
